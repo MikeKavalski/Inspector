@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Inspector</string>
+    <string name="choose_check_list">Выберите чек-лист</string>
+    <string name="accepted">Принято</string>
+    <string name="rejected">Отклонено</string>
+    <string name="not_applicable">Неприменимо</string>
+    <string name="comment">Комментарий</string>
+    <string name="manufacturer">Изготовитель</string>
+    <string name="manufacturer1">Изготовитель:</string>
+    <string name="equipment_name">Наименование оборудования</string>
+    <string name="equipment_id">Идентификатор оборудования</string>
+    <string name="equipment">Оборудование:</string>
+    <string name="inspector_full_name">ФИО инспектора</string>
+    <string name="inspector">Инспектор</string>
+    <string name="reseted">Чек-лист очищен</string>
+    <string name="pictured">Фото сохранено на устройстве</string>
+    <string name="reset_alert_title">Сброс данных</string>
+    <string name="reset_question">Вы хотите очистить чек-лист?</string>
+    <string name="save_to_pdf">Сохранить в PDF</string>
+    <string name="reset_checklist">Очистить чек-лист</string>
+    <string name="change_language">Изменить язык</string>
+    <string name="pdf_saved">Отчет сохнанен в PDF</string>
+    <string name="choose_photos">Выберите фото</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+    <string name="ok">OK</string>
+    <string name="report">Отчет</string>
+    <string name="is_saved_to">сохранен в</string>
+    <string name="permission_denied">Доступ запрещен</string>
+    <string name="additional_info_for_pdf">Запрос данных</string>
+    <string name="additional_info_for_pdf_msg">Заполните форму для завершения отчета</string>
+    <string name="photo_saved">Фото сохранено на устройство</string>
+    <string name="ask_imgs_pdf">Хотите добавить фото в отчет?</string>
+    <string name="img_added">Изображение добавлено в отчет</string>
+    <string name="imgs_added">Изображения добавлены в отчет</string>
+    <string name="clear">Очистить</string>
+    <string name="complete_report">Сформировать отчет</string>
+    <string name="report_completed">Отчет сформирован</string>
+    <string name="russian">Русский</string>
+    <string name="english">Английский</string>
+    <string name="sign_report">Подпишите отчет</string>
+    <string name="date">Дата:</string>
+    <string name="doc_id">Отчет №</string>
+    <string name="img_att">изображение приложено</string>
+    <string name="img2_att">изображения приложены</string>
+    <string name="imgs_att">изображений приложены</string>
+    <string name="no_imgs_att">Изображения не приложены</string>
+    <string name="common_comment">Дополнительные комментарии:</string>
+    <string name="max_lines_7">Комментарий не может превышать 7 строк</string>
+    <string name="max_lines_5">Дополнительный комментарий не может превышать 5 строк</string>
+    <string name="in_item">в пункте</string>
+    <string name="warning">Предупреждение</string>
+    <string name="process">Операция:</string>
+
+
+    <!--    CheckLists names-->
+    <string name="heat_treatment">Термообработка</string>
+    <string name="hot_cold_forming">Горячая/холодная обработка давлением</string>
+    <string name="machining">Механическая обработка</string>
+    <string name="welding_preparation">Подготовка к сварке</string>
+    <string name="welding">Сварка</string>
+    <string name="visual_check">Визуально-измерительный контроль</string>
+    <string name="radiographic">Радиографический контроль</string>
+    <string name="magnetic">Магнитопорошковый контроль</string>
+    <string name="dye_penetrant">Капиллярный контроль</string>
+    <string name="ultrasonic">Ультразвуковой контроль</string>
+    <string name="paintwork">Контроль лакокрасочного покрытия</string>
+    <string name="packaging">Контроль упаковки</string>
+    <string name="preservation">Контроль консервации</string>
+
+
+    <!--    Heat Treatment checkList content-->
+    <string name="heat_treatment_1">1. Идентифицировать изделие: проверить наименование, условное обозначение, идентификационный номер, код, маркировку и т.д.</string>
+    <string name="heat_treatment_2">2. Проверить, что все предшествующие контрольные точки пройдены, ранее выявленные несоответствия (если были) устранены и отчеты о несоответствиях закрыты.</string>
+    <string name="heat_treatment_3">3. Проверить наличие документации/маркировки, подтверждающей приемку деталей и узлов отделом технического контроля предприятия.</string>
+    <string name="heat_treatment_4">4. Проверить наличие конструкторской и производственно-технологической документации.</string>
+    <string name="heat_treatment_5">5. Проверить наличие, срок действия удостоверений персонала, выполняющего технологический процесс, и документальное подтверждение допуска к работе.</string>
+    <string name="heat_treatment_6">6. Проверить наличие аттестации инженерно-технических работников, осуществляющих руководство работами, и документальное подтверждение допуска к работе.</string>
+    <string name="heat_treatment_7">7. Проверить наличие поверенных инструментов, используемых при контроле.</string>
+    <string name="heat_treatment_8">8. Проверить соответствие технологическому процессу параметров оборудования, контрольно-измерительных приборов и приспособлений.</string>
+    <string name="heat_treatment_9">9. Проверить наличие  и выполнение планов технического обслуживания применяемого оборудования и контрольно-измерительных приборов.</string>
+    <string name="heat_treatment_10">10. Проверить, что применяемые материалы  имеют сертификаты и удовлетворяют требованиям, установленным в производственно-технологической документации.</string>
+    <string name="heat_treatment_11">11. Проверить наличие на рабочем месте согласованной технологии термической обработки.</string>
+    <string name="heat_treatment_12">12. Проверить наличие записей, свидетельствующих об ознакомлении исполнителей с технологической документацией.</string>
+    <string name="heat_treatment_13">13. Проверить соответствие фактического расположения термопар требованиям технологической документации.</string>
+    <string name="heat_treatment_14">14. Проверить соответствие температуры начала термообработки требованиям технологической документации.</string>
+    <string name="heat_treatment_15">15. Проверить соответствие скорости подъема температуры  требованиям технологической документации.</string>
+    <string name="heat_treatment_16">16. Проверить соответствие времени выдержки температуры требованиям технологической документации.</string>
+    <string name="heat_treatment_17">17. Проверить соответствие условий охлаждения требованиям технологической документации.</string>
+    <string name="heat_treatment_18">18. Проверить, что размеры изделия после технологического процесса соответствуют требованиям конструкторской документации.</string>
+    <string name="heat_treatment_19">19. Проверить, что на изделии отсутствуют поверхностные дефекты.</string>
+    <string name="heat_treatment_20">20. Проверить, что документы, оформленные по результатам проведения технологического процесса, заполнены в полном объеме в соответствии с требованиями нормативной документации.</string>
+
+
+    <!--    Hot/Cold forming checkList content-->
+    <string name="hotcold_1">1. Идентифицировать изделие: проверить наименование, условное обозначение, идентификационный номер, код, маркировку и т.д.</string>
+    <string name="hotcold_2">2. Проверить, что все предшествующие контрольные точки пройдены, ранее выявленные несоответствия (если были) устранены и отчеты о несоответствиях закрыты.</string>
+    <string name="hotcold_3">3. Проверить наличие документации/маркировки, подтверждающей приемку заготовок отделом технического контроля предприятия.</string>
+    <string name="hotcold_4">4. Проверить наличие конструкторской и производственно-технологической документации на технологический процесс.</string>
+    <string name="hotcold_5">5. Проверить выполнение квалификационных тестов (обработку давлением настроечной детали).</string>
+    <string name="hotcold_6">6. Проверить наличие, срок действия удостоверений персонала, выполняющего технологический процесс, и документальное подтверждение допуска к работе.</string>
+    <string name="hotcold_7">7. Проверить наличие аттестации инженерно-технических работников, осуществляющих руководство работами, и документальное подтверждение допуска к работе.</string>
+    <string name="hotcold_8">8. Проверить наличие поверенных инструментов, используемых при контроле.</string>
+    <string name="hotcold_9">9. Проверить соответствие технологическому процессу параметров оборудования, контрольно-измерительных приборов и приспособлений.</string>
+    <string name="hotcold_10">10. Проверить наличие  и выполнение планов технического обслуживания применяемого оборудования и контрольно-измерительных приборов.</string>
+    <string name="hotcold_11">11. Проверить, что применяемые материалы  имеют сертификаты и удовлетворяют требованиям, установленным в производственно-технологической документации.</string>
+    <string name="hotcold_12">12. Проверить наличие на рабочем месте согласованной технологии обработки давлением.</string>
+    <string name="hotcold_13">13. Проверить наличие записей, свидетельствующих об ознакомлении исполнителей с технологической документацией.</string>
+    <string name="hotcold_14">14. Проверить, что технологический процесс проводится в соответствии с требованиями производственно-технологической документации.</string>
+    <string name="hotcold_15">15. Проверить соответствие технологической документации температуры окончания технологического процесса (для горячей обработки давлением).</string>
+    <string name="hotcold_16">16. Проверить, что размеры изделия после технологического процесса соответствуют требованиям конструкторской документации.</string>
+    <string name="hotcold_17">17. Проверить, что на изделии отсутствуют поверхностные дефекты.</string>
+    <string name="hotcold_18">18. Проверить, что маркировка соответствует требованиям конструкторской документации.</string>
+    <string name="hotcold_19">19. Проверить, что документы, оформленные по результатам проведения технологического процесса, заполнены в полном объеме в соответствии с требованиями нормативной документации.</string>
+
+
+    <!--    Machining checkList content-->
+    <string name="machining_1">1. </string>
+    <string name="machining_2">2. </string>
+    <string name="machining_3">3. .</string>
+    <string name="machining_4">4. </string>
+    <string name="machining_5">5. .</string>
+    <string name="machining_6">6. .</string>
+    <string name="machining_7">7. k.</string>
+    <string name="machining_8">8. .</string>
+    <string name="machining_9">9. .</string>
+    <string name="machining_10">10. .</string>
+    <string name="machining_11">11. .</string>
+    <string name="machining_12">12. .</string>
+    <string name="machining_13">13..</string>
+    <string name="machining_14">14..</string>
+    <string name="machining_15">15. .</string>
+    <string name="machining_16">16. .</string>
+
+</resources>

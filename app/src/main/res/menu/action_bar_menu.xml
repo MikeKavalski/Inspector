@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/more"
+        android:title=""
+        android:icon="@drawable/ic_baseline_more_vert_24"
+        app:showAsAction="always">
+
+        <menu>
+            <item android:title="@string/save_to_pdf"
+                android:id="@+id/to_pdf"
+                android:icon="@drawable/ic_baseline_save_alt_24" />
+
+            <item android:title="@string/reset_checklist"
+                android:id="@+id/reset_checklist"
+                android:icon="@drawable/ic_baseline_cleaning_services_24" />
+
+        </menu>
+    </item>
+</menu>
+
+

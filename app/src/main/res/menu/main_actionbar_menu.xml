@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/more"
+        android:title=""
+        android:icon="@drawable/ic_baseline_language_24"
+        app:showAsAction="always">
+
+        <menu>
+            <item android:title="@string/russian"
+                android:id="@+id/russian_lang"
+                android:icon="@drawable/russian_flag_48" />
+
+            <item android:title="@string/english"
+                android:id="@+id/english_lang"
+                android:icon="@drawable/usa_flag_48" />
+        </menu>
+    </item>
+</menu>

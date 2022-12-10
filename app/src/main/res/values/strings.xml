@@ -1,0 +1,135 @@
+<resources>
+    <string name="app_name">Inspector</string>
+    <string name="choose_check_list">Choose the CheckList</string>
+    <string name="accepted">Accepted</string>
+    <string name="rejected">Rejected</string>
+    <string name="not_applicable">Not Applicable</string>
+    <string name="comment">Comment</string>
+    <string name="manufacturer">Manufacturer</string>
+    <string name="manufacturer1">Manufacturer:</string>
+    <string name="equipment_name">Equipment name</string>
+    <string name="equipment_id">Equipment ID</string>
+    <string name="equipment">Equipment:</string>
+    <string name="inspector">Inspector</string>
+    <string name="inspector_full_name">Inspector full name</string>
+    <string name="reseted">CheckList was reseted</string>
+    <string name="pictured">Photo was saved</string>
+    <string name="reset_alert_title">Data reset</string>
+    <string name="reset_question">Do you want to reset this CheckList?</string>
+    <string name="save_to_pdf">Save to PDF</string>
+    <string name="reset_checklist">Reset CheckList</string>
+    <string name="change_language">Change language</string>
+    <string name="pdf_saved">The report was saved to PDF</string>
+    <string name="choose_photos">Choose Photos</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="ok">OK</string>
+    <string name="report">Report</string>
+    <string name="is_saved_to">is saved to</string>
+    <string name="permission_denied">Permission Denied</string>
+    <string name="additional_info_for_pdf">Data request</string>
+    <string name="additional_info_for_pdf_msg">Fill these fields to complete the report</string>
+    <string name="photo_saved">Photo was saved to the device storage</string>
+    <string name="ask_imgs_pdf">Do you want to add photos to the report?</string>
+    <string name="img_added">Image added to the report</string>
+    <string name="imgs_added">Images added to the report</string>
+    <string name="clear">Clear</string>
+    <string name="complete_report">Complete the Report</string>
+    <string name="sign_report">Sign the Report</string>
+    <string name="report_completed">The Report is Completed</string>
+    <string name="russian">Russian</string>
+    <string name="english">English</string>
+    <string name="date">Date:</string>
+    <string name="doc_id">Report ID</string>
+    <string name="img_att">image attached to the report</string>
+    <string name="img2_att">images attached to the report</string>
+    <string name="imgs_att">images attached to the report</string>
+    <string name="no_imgs_att">No images attached</string>
+    <string name="common_comment">Additional notes:</string>
+    <string name="max_lines_7">Maximum Limit of 7 Text Lines was Reached</string>
+    <string name="max_lines_5">Additional comment cannot contain more than 5 lines</string>
+    <string name="in_item">in item</string>
+    <string name="warning">Warning</string>
+    <string name="process">Process:</string>
+
+    <!--    CheckLists names-->
+    <string name="heat_treatment">Heat Treatment</string>
+    <string name="hot_cold_forming">Hot/Cold Forming</string>
+    <string name="machining">Machining</string>
+    <string name="welding_preparation">Welding Preparation</string>
+    <string name="welding">Welding</string>
+    <string name="visual_check">Visual and Dimensional Inspection</string>
+    <string name="radiographic">Radiographic Inspection</string>
+    <string name="magnetic">Magnetic Particles Inspection</string>
+    <string name="dye_penetrant">Dye Penetrant Inspection</string>
+    <string name="ultrasonic">Ultrasonic Inspection</string>
+    <string name="paintwork">Paintwork Inspection</string>
+    <string name="packaging">Packaging Inspection</string>
+    <string name="preservation">Preservation Inspection</string>
+
+
+    <!--    Heat Treatment checkList content-->
+    <string name="heat_treatment_1">1. Identify the product: check the name, identification number, code, marking, etc.</string>
+    <string name="heat_treatment_2">2. Check that all the previous control points are completed, previously identified nonconformities (if any) are eliminated and nonconformity reports are closed.</string>
+    <string name="heat_treatment_3">3. Check the availability of documentation / markings confirming the acceptance of parts and assemblies by the technical control department of the enterprise.</string>
+    <string name="heat_treatment_4">4. Check the availability of the appropriate design, production and technological documentation.</string>
+    <string name="heat_treatment_5">5. Check the availability and validity period of certificates of the personnel performing the process  and documentary confirmation of admission to work.</string>
+    <string name="heat_treatment_6">6. Check the availability of certification of engineers who supervise the works and documentary confirmation of admission to work.</string>
+    <string name="heat_treatment_7">7. Check the availability of certified tools used in the control.</string>
+    <string name="heat_treatment_8">8. Check that the parameters of the equipment, instrumentation and fixtures correspond to the process.</string>
+    <string name="heat_treatment_9">9. Check the availability and implementation of maintenance plans for the equipment and instrumentation used.</string>
+    <string name="heat_treatment_10">10. Check that the materials used are certified and meet the requirements specified in the production and technological documentation.</string>
+    <string name="heat_treatment_11">11. Check the availability of an agreed heat treatment technology at the workplace.</string>
+    <string name="heat_treatment_12">12. Check the availability of records indicating that performers are familiar with the technological documentation.</string>
+    <string name="heat_treatment_13">13. Check that the actual location of the thermocouples complies with the requirements of the technological documentation.</string>
+    <string name="heat_treatment_14">14. Check the compliance of the heat treatment start temperature with the requirements of the technological documentation.</string>
+    <string name="heat_treatment_15">15. Check compliance of the temperature rise rate with the requirements of technological documentation.</string>
+    <string name="heat_treatment_16">16. Check the compliance of the temperature holding time with the requirements of the technological documentation.</string>
+    <string name="heat_treatment_17">17. Check the compliance of cooling conditions with the requirements of technological documentation.</string>
+    <string name="heat_treatment_18">18. Check that the dimensions of the product after the process comply with the requirements of the design documentation.</string>
+    <string name="heat_treatment_19">19. Check that there are no surface defects on the product.</string>
+    <string name="heat_treatment_20">20. Check that the documents drawn up based on the results of the technological process are completed in full in accordance with the requirements of regulatory documentation.</string>
+
+    <!--    Hot/Cold forming checkList content-->
+    <string name="hotcold_1">1. Identify the product: check the name, identification number, code, marking, etc.</string>
+    <string name="hotcold_2">2. Check that all the previous control points are completed, previously identified nonconformities (if any) are eliminated and nonconformity reports are closed.</string>
+    <string name="hotcold_3">3. Check the availability of documentation / markings confirming the acceptance of parts and assemblies by the technical control department of the enterprise.</string>
+    <string name="hotcold_4">4. Check the availability of the appropriate design, production and technological documentation.</string>
+    <string name="hotcold_5">5. Check the performance of the qualification tests (forming of the adjusting item).</string>
+    <string name="hotcold_6">6. Check the availability and validity period of certificates of the personnel performing the process  and documentary confirmation of admission to work.</string>
+    <string name="hotcold_7">7. Check the availability of certification of engineers who supervise the works and documentary evidence of admission to work.</string>
+    <string name="hotcold_8">8. Check the availability of certified tools used in the control.</string>
+    <string name="hotcold_9">9. Check that the parameters of the equipment, instrumentation and fixtures correspond to the process.</string>
+    <string name="hotcold_10">10. Check the availability and implementation of maintenance plans for the equipment and instrumentation used.</string>
+    <string name="hotcold_11">11. Check that the materials used are certified and meet the requirements specified in the production and technological documentation.</string>
+    <string name="hotcold_12">12. Check the availability of an agreed forming technology at the workplace.</string>
+    <string name="hotcold_13">13. Check the availability of records indicating that performers are familiar with the technological documentation.</string>
+    <string name="hotcold_14">14. Check that the process is carried out in accordance with the requirements of production and technological documentation.</string>
+    <string name="hotcold_15">15. Check the compliance of the forming end temperature   with the technological documentation (for the hot forming).</string>
+    <string name="hotcold_16">16. Check that the dimensions of the product after the process comply with the requirements of the design documentation.</string>
+    <string name="hotcold_17">17. Check that there are no surface defects on the product.</string>
+    <string name="hotcold_18">18. Check that the marking complies with the requirements of the design documentation.</string>
+    <string name="hotcold_19">19. Check that the documents drawn up based on the results of the technological process are completed in full in accordance with the requirements of regulatory documentation.</string>
+
+
+    <!--    Machining checkList content-->
+    <string name="machining_1">1. </string>
+    <string name="machining_2">2. </string>
+    <string name="machining_3">3. .</string>
+    <string name="machining_4">4. </string>
+    <string name="machining_5">5. .</string>
+    <string name="machining_6">6. .</string>
+    <string name="machining_7">7. k.</string>
+    <string name="machining_8">8. .</string>
+    <string name="machining_9">9. .</string>
+    <string name="machining_10">10. .</string>
+    <string name="machining_11">11. .</string>
+    <string name="machining_12">12. .</string>
+    <string name="machining_13">13..</string>
+    <string name="machining_14">14..</string>
+    <string name="machining_15">15. .</string>
+    <string name="machining_16">16. .</string>
+
+
+
+</resources>

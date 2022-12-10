@@ -1,0 +1,1765 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--Check 1-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/m_cv_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:elevation="5dp"
+                android:orientation="vertical"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:id="@+id/m_heading_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:padding="10dp"
+                        android:text="@string/machining_1"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:justificationMode="inter_word"/>
+
+                    <RadioGroup
+                        android:id="@+id/m_ch1_buttons"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/m_ch1_accepted"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal"
+                            android:saveEnabled="true"
+                            android:text="@string/accepted"
+                            android:textAlignment="center" />
+
+                        <RadioButton
+                            android:id="@+id/m_ch1_rejected"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal"
+                            android:saveEnabled="true"
+                            android:text="@string/rejected"
+                            android:textAlignment="center" />
+
+                        <RadioButton
+                            android:id="@+id/m_ch1_not_applicable"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal"
+                            android:saveEnabled="true"
+                            android:text="@string/not_applicable"
+                            android:textAlignment="center" />
+                    </RadioGroup>
+
+                    <EditText
+                        android:id="@+id/m_ch1_comment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/m_ch1_buttons"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:autofillHints=""
+                        android:background="@drawable/edittext_design"
+                        android:hint="@string/comment"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:maxLength="370"
+                        android:minHeight="48dp"
+                        android:maxLines="7"
+                        android:saveEnabled="true"
+                        android:text=""
+                        android:textColorHint="#757575"
+                        tools:ignore="RtlSymmetry" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.cardview.widget.CardView>
+            <!--Check 2-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/m_cv_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:elevation="5dp"
+                android:orientation="vertical"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/m_cv_1">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:id="@+id/m_heading_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:padding="10dp"
+                        android:text="@string/machining_2"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:justificationMode="inter_word"/>
+
+                    <RadioGroup
+                        android:id="@+id/m_ch2_buttons"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/m_ch2_accepted"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal"
+                            android:saveEnabled="true"
+                            android:text="@string/accepted"
+                            android:textAlignment="center" />
+
+                        <RadioButton
+                            android:id="@+id/m_ch2_rejected"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal"
+                            android:saveEnabled="true"
+                            android:text="@string/rejected"
+                            android:textAlignment="center" />
+
+                        <RadioButton
+                            android:id="@+id/m_ch2_not_applicable"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal"
+                            android:saveEnabled="true"
+                            android:text="@string/not_applicable"
+                            android:textAlignment="center" />
+                    </RadioGroup>
+
+                    <EditText
+                        android:id="@+id/m_ch2_comment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/m_ch2_buttons"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:autofillHints=""
+                        android:background="@drawable/edittext_design"
+                        android:hint="@string/comment"
+                        android:inputType="textMultiLine"
+                        android:maxLength="370"
+                        android:minHeight="48dp"
+                        android:paddingStart="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:maxLines="7"
+                        android:saveEnabled="true"
+                        android:text=""
+                        android:textColorHint="#757575"
+                        tools:ignore="RtlSymmetry" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.cardview.widget.CardView>
+            <!--Check 3-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/m_cv_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:elevation="5dp"
+                android:orientation="vertical"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/m_cv_2">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:id="@+id/m_heading_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:padding="10dp"
+                        android:text="@string/machining_3"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:justificationMode="inter_word"/>
+
+                    <RadioGroup
+                        android:id="@+id/m_ch3_buttons"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/m_ch3_accepted"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal"
+                            android:saveEnabled="true"
+                            android:text="@string/accepted"
+                            android:textAlignment="center" />
+
+                        <RadioButton
+                            android:id="@+id/m_ch3_rejected"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal"
+                            android:saveEnabled="true"
+                            android:text="@string/rejected"
+                            android:textAlignment="center" />
+
+                        <RadioButton
+                            android:id="@+id/m_ch3_not_applicable"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal"
+                            android:saveEnabled="true"
+                            android:text="@string/not_applicable"
+                            android:textAlignment="center" />
+                    </RadioGroup>
+
+                    <EditText
+                        android:id="@+id/m_ch3_comment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/m_ch3_buttons"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:autofillHints=""
+                        android:background="@drawable/edittext_design"
+                        android:hint="@string/comment"
+                        android:inputType="textMultiLine"
+                        android:maxLength="370"
+                        android:minHeight="48dp"
+                        android:paddingStart="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:maxLines="7"
+                        android:saveEnabled="true"
+                        android:text=""
+                        android:textColorHint="#757575"
+                        tools:ignore="RtlSymmetry" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.cardview.widget.CardView>
+            <!--Check 4-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/m_cv_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:elevation="5dp"
+                android:orientation="vertical"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/m_cv_3">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:id="@+id/m_heading_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:padding="10dp"
+                        android:text="@string/machining_4"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:justificationMode="inter_word"/>
+
+                    <RadioGroup
+                        android:id="@+id/m_ch4_buttons"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/m_ch4_accepted"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal"
+                            android:saveEnabled="true"
+                            android:text="@string/accepted"
+                            android:textAlignment="center" />
+
+                        <RadioButton
+                            android:id="@+id/m_ch4_rejected"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal"
+                            android:saveEnabled="true"
+                            android:text="@string/rejected"
+                            android:textAlignment="center" />
+
+                        <RadioButton
+                            android:id="@+id/m_ch4_not_applicable"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal"
+                            android:saveEnabled="true"
+                            android:text="@string/not_applicable"
+                            android:textAlignment="center" />
+                    </RadioGroup>
+
+                    <EditText
+                        android:id="@+id/m_ch4_comment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/m_ch4_buttons"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:autofillHints=""
+                        android:background="@drawable/edittext_design"
+                        android:hint="@string/comment"
+                        android:inputType="textMultiLine"
+                        android:maxLength="370"
+                        android:minHeight="48dp"
+                        android:paddingStart="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:maxLines="7"
+                        android:saveEnabled="true"
+                        android:text=""
+                        android:textColorHint="#757575"
+                        tools:ignore="RtlSymmetry" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.cardview.widget.CardView>
+            <!--Check 5-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/m_cv_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:elevation="5dp"
+                android:orientation="vertical"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/m_cv_4">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:id="@+id/m_heading_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:padding="10dp"
+                        android:text="@string/machining_5"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:justificationMode="inter_word"/>
+
+                    <RadioGroup
+                        android:id="@+id/m_ch5_buttons"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/m_ch5_accepted"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal"
+                            android:saveEnabled="true"
+                            android:text="@string/accepted"
+                            android:textAlignment="center" />
+
+                        <RadioButton
+                            android:id="@+id/m_ch5_rejected"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal"
+                            android:saveEnabled="true"
+                            android:text="@string/rejected"
+                            android:textAlignment="center" />
+
+                        <RadioButton
+                            android:id="@+id/m_ch5_not_applicable"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal"
+                            android:saveEnabled="true"
+                            android:text="@string/not_applicable"
+                            android:textAlignment="center" />
+                    </RadioGroup>
+
+                    <EditText
+                        android:id="@+id/m_ch5_comment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/m_ch5_buttons"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:autofillHints=""
+                        android:background="@drawable/edittext_design"
+                        android:hint="@string/comment"
+                        android:inputType="textMultiLine"
+                        android:maxLength="370"
+                        android:minHeight="48dp"
+                        android:paddingStart="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:maxLines="7"
+                        android:saveEnabled="true"
+                        android:text=""
+                        android:textColorHint="#757575"
+                        tools:ignore="RtlSymmetry" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.cardview.widget.CardView>
+            <!--Check 6-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/m_cv_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:elevation="5dp"
+                android:orientation="vertical"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/m_cv_5">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:id="@+id/m_heading_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:padding="10dp"
+                        android:text="@string/machining_6"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:justificationMode="inter_word"/>
+
+                    <RadioGroup
+                        android:id="@+id/m_ch6_buttons"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/m_ch6_accepted"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal"
+                            android:saveEnabled="true"
+                            android:text="@string/accepted"
+                            android:textAlignment="center" />
+
+                        <RadioButton
+                            android:id="@+id/m_ch6_rejected"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal"
+                            android:saveEnabled="true"
+                            android:text="@string/rejected"
+                            android:textAlignment="center" />
+
+                        <RadioButton
+                            android:id="@+id/m_ch6_not_applicable"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal"
+                            android:saveEnabled="true"
+                            android:text="@string/not_applicable"
+                            android:textAlignment="center" />
+                    </RadioGroup>
+
+                    <EditText
+                        android:id="@+id/m_ch6_comment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/m_ch5_buttons"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:autofillHints=""
+                        android:background="@drawable/edittext_design"
+                        android:hint="@string/comment"
+                        android:inputType="textMultiLine"
+                        android:maxLength="370"
+                        android:minHeight="48dp"
+                        android:paddingStart="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:maxLines="7"
+                        android:saveEnabled="true"
+                        android:text=""
+                        android:textColorHint="#757575"
+                        tools:ignore="RtlSymmetry" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.cardview.widget.CardView>
+            <!--Check 7-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/m_cv_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:elevation="5dp"
+                android:orientation="vertical"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/m_cv_6">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:id="@+id/m_heading_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:padding="10dp"
+                        android:text="@string/machining_7"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:justificationMode="inter_word"/>
+
+                    <RadioGroup
+                        android:id="@+id/m_ch7_buttons"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/m_ch7_accepted"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal"
+                            android:saveEnabled="true"
+                            android:text="@string/accepted"
+                            android:textAlignment="center" />
+
+                        <RadioButton
+                            android:id="@+id/m_ch7_rejected"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal"
+                            android:saveEnabled="true"
+                            android:text="@string/rejected"
+                            android:textAlignment="center" />
+
+                        <RadioButton
+                            android:id="@+id/m_ch7_not_applicable"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal"
+                            android:saveEnabled="true"
+                            android:text="@string/not_applicable"
+                            android:textAlignment="center" />
+                    </RadioGroup>
+
+                    <EditText
+                        android:id="@+id/m_ch7_comment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/m_ch5_buttons"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:autofillHints=""
+                        android:background="@drawable/edittext_design"
+                        android:hint="@string/comment"
+                        android:inputType="textMultiLine"
+                        android:maxLength="370"
+                        android:minHeight="48dp"
+                        android:paddingStart="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:maxLines="7"
+                        android:saveEnabled="true"
+                        android:text=""
+                        android:textColorHint="#757575"
+                        tools:ignore="RtlSymmetry" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.cardview.widget.CardView>
+            <!--Check 8-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/m_cv_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:elevation="5dp"
+                android:orientation="vertical"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/m_cv_7">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:id="@+id/m_heading_8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:padding="10dp"
+                        android:text="@string/machining_8"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:justificationMode="inter_word"/>
+
+                    <RadioGroup
+                        android:id="@+id/m_ch8_buttons"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/m_ch8_accepted"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal"
+                            android:saveEnabled="true"
+                            android:text="@string/accepted"
+                            android:textAlignment="center" />
+
+                        <RadioButton
+                            android:id="@+id/m_ch8_rejected"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal"
+                            android:saveEnabled="true"
+                            android:text="@string/rejected"
+                            android:textAlignment="center" />
+
+                        <RadioButton
+                            android:id="@+id/m_ch8_not_applicable"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal"
+                            android:saveEnabled="true"
+                            android:text="@string/not_applicable"
+                            android:textAlignment="center" />
+                    </RadioGroup>
+
+                    <EditText
+                        android:id="@+id/m_ch8_comment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/m_ch5_buttons"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:autofillHints=""
+                        android:background="@drawable/edittext_design"
+                        android:hint="@string/comment"
+                        android:inputType="textMultiLine"
+                        android:maxLength="370"
+                        android:minHeight="48dp"
+                        android:paddingStart="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:maxLines="7"
+                        android:saveEnabled="true"
+                        android:text=""
+                        android:textColorHint="#757575"
+                        tools:ignore="RtlSymmetry" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.cardview.widget.CardView>
+            <!--Check 9-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/m_cv_9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:elevation="5dp"
+                android:orientation="vertical"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/m_cv_8">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:id="@+id/m_heading_9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:padding="10dp"
+                        android:text="@string/machining_9"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:justificationMode="inter_word"/>
+
+                    <RadioGroup
+                        android:id="@+id/m_ch9_buttons"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/m_ch9_accepted"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal"
+                            android:saveEnabled="true"
+                            android:text="@string/accepted"
+                            android:textAlignment="center" />
+
+                        <RadioButton
+                            android:id="@+id/m_ch9_rejected"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal"
+                            android:saveEnabled="true"
+                            android:text="@string/rejected"
+                            android:textAlignment="center" />
+
+                        <RadioButton
+                            android:id="@+id/m_ch9_not_applicable"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal"
+                            android:saveEnabled="true"
+                            android:text="@string/not_applicable"
+                            android:textAlignment="center" />
+                    </RadioGroup>
+
+                    <EditText
+                        android:id="@+id/m_ch9_comment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/m_ch5_buttons"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:autofillHints=""
+                        android:background="@drawable/edittext_design"
+                        android:hint="@string/comment"
+                        android:inputType="textMultiLine"
+                        android:maxLength="370"
+                        android:minHeight="48dp"
+                        android:paddingStart="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:maxLines="7"
+                        android:saveEnabled="true"
+                        android:text=""
+                        android:textColorHint="#757575"
+                        tools:ignore="RtlSymmetry" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.cardview.widget.CardView>
+            <!--Check 10-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/m_cv_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:elevation="5dp"
+                android:orientation="vertical"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/m_cv_9">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:id="@+id/m_heading_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:padding="10dp"
+                        android:text="@string/machining_10"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:justificationMode="inter_word"/>
+
+                    <RadioGroup
+                        android:id="@+id/m_ch10_buttons"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/m_ch10_accepted"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal"
+                            android:saveEnabled="true"
+                            android:text="@string/accepted"
+                            android:textAlignment="center" />
+
+                        <RadioButton
+                            android:id="@+id/m_ch10_rejected"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal"
+                            android:saveEnabled="true"
+                            android:text="@string/rejected"
+                            android:textAlignment="center" />
+
+                        <RadioButton
+                            android:id="@+id/m_ch10_not_applicable"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal"
+                            android:saveEnabled="true"
+                            android:text="@string/not_applicable"
+                            android:textAlignment="center" />
+                    </RadioGroup>
+
+                    <EditText
+                        android:id="@+id/m_ch10_comment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/m_ch5_buttons"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:autofillHints=""
+                        android:background="@drawable/edittext_design"
+                        android:hint="@string/comment"
+                        android:inputType="textMultiLine"
+                        android:maxLength="370"
+                        android:minHeight="48dp"
+                        android:paddingStart="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:maxLines="7"
+                        android:saveEnabled="true"
+                        android:text=""
+                        android:textColorHint="#757575"
+                        tools:ignore="RtlSymmetry" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.cardview.widget.CardView>
+            <!--Check 11-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/m_cv_11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:elevation="5dp"
+                android:orientation="vertical"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/m_cv_10">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:id="@+id/m_heading_11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:padding="10dp"
+                        android:text="@string/machining_11"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:justificationMode="inter_word"/>
+
+                    <RadioGroup
+                        android:id="@+id/m_ch11_buttons"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/m_ch11_accepted"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal"
+                            android:saveEnabled="true"
+                            android:text="@string/accepted"
+                            android:textAlignment="center" />
+
+                        <RadioButton
+                            android:id="@+id/m_ch11_rejected"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal"
+                            android:saveEnabled="true"
+                            android:text="@string/rejected"
+                            android:textAlignment="center" />
+
+                        <RadioButton
+                            android:id="@+id/m_ch11_not_applicable"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal"
+                            android:saveEnabled="true"
+                            android:text="@string/not_applicable"
+                            android:textAlignment="center" />
+                    </RadioGroup>
+
+                    <EditText
+                        android:id="@+id/m_ch11_comment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/m_ch5_buttons"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:autofillHints=""
+                        android:background="@drawable/edittext_design"
+                        android:hint="@string/comment"
+                        android:inputType="textMultiLine"
+                        android:maxLength="370"
+                        android:minHeight="48dp"
+                        android:paddingStart="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:maxLines="7"
+                        android:saveEnabled="true"
+                        android:text=""
+                        android:textColorHint="#757575"
+                        tools:ignore="RtlSymmetry" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.cardview.widget.CardView>
+            <!--Check 12-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/m_cv_12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:elevation="5dp"
+                android:orientation="vertical"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/m_cv_11">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:id="@+id/m_heading_12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:padding="10dp"
+                        android:text="@string/machining_12"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:justificationMode="inter_word"/>
+
+                    <RadioGroup
+                        android:id="@+id/m_ch12_buttons"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/m_ch12_accepted"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal"
+                            android:saveEnabled="true"
+                            android:text="@string/accepted"
+                            android:textAlignment="center" />
+
+                        <RadioButton
+                            android:id="@+id/m_ch12_rejected"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal"
+                            android:saveEnabled="true"
+                            android:text="@string/rejected"
+                            android:textAlignment="center" />
+
+                        <RadioButton
+                            android:id="@+id/m_ch12_not_applicable"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal"
+                            android:saveEnabled="true"
+                            android:text="@string/not_applicable"
+                            android:textAlignment="center" />
+                    </RadioGroup>
+
+                    <EditText
+                        android:id="@+id/m_ch12_comment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/m_ch5_buttons"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:autofillHints=""
+                        android:background="@drawable/edittext_design"
+                        android:hint="@string/comment"
+                        android:inputType="textMultiLine"
+                        android:maxLength="370"
+                        android:minHeight="48dp"
+                        android:paddingStart="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:maxLines="7"
+                        android:saveEnabled="true"
+                        android:text=""
+                        android:textColorHint="#757575"
+                        tools:ignore="RtlSymmetry" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.cardview.widget.CardView>
+            <!--Check 13-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/m_cv_13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:elevation="5dp"
+                android:orientation="vertical"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/m_cv_12">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:id="@+id/m_heading_13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:padding="10dp"
+                        android:text="@string/machining_13"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:justificationMode="inter_word"/>
+
+                    <RadioGroup
+                        android:id="@+id/m_ch13_buttons"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/m_ch13_accepted"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal"
+                            android:saveEnabled="true"
+                            android:text="@string/accepted"
+                            android:textAlignment="center" />
+
+                        <RadioButton
+                            android:id="@+id/m_ch13_rejected"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal"
+                            android:saveEnabled="true"
+                            android:text="@string/rejected"
+                            android:textAlignment="center" />
+
+                        <RadioButton
+                            android:id="@+id/m_ch13_not_applicable"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal"
+                            android:saveEnabled="true"
+                            android:text="@string/not_applicable"
+                            android:textAlignment="center" />
+                    </RadioGroup>
+
+                    <EditText
+                        android:id="@+id/m_ch13_comment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/m_ch5_buttons"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:autofillHints=""
+                        android:background="@drawable/edittext_design"
+                        android:hint="@string/comment"
+                        android:inputType="textMultiLine"
+                        android:maxLength="370"
+                        android:minHeight="48dp"
+                        android:paddingStart="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:maxLines="7"
+                        android:saveEnabled="true"
+                        android:text=""
+                        android:textColorHint="#757575"
+                        tools:ignore="RtlSymmetry" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.cardview.widget.CardView>
+            <!--Check 14-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/m_cv_14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:elevation="5dp"
+                android:orientation="vertical"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/m_cv_13">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:id="@+id/m_heading_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:padding="10dp"
+                        android:text="@string/machining_14"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:justificationMode="inter_word"/>
+
+                    <RadioGroup
+                        android:id="@+id/m_ch14_buttons"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/m_ch14_accepted"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal"
+                            android:saveEnabled="true"
+                            android:text="@string/accepted"
+                            android:textAlignment="center" />
+
+                        <RadioButton
+                            android:id="@+id/m_ch14_rejected"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal"
+                            android:saveEnabled="true"
+                            android:text="@string/rejected"
+                            android:textAlignment="center" />
+
+                        <RadioButton
+                            android:id="@+id/m_ch14_not_applicable"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal"
+                            android:saveEnabled="true"
+                            android:text="@string/not_applicable"
+                            android:textAlignment="center" />
+                    </RadioGroup>
+
+                    <EditText
+                        android:id="@+id/m_ch14_comment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/m_ch5_buttons"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:autofillHints=""
+                        android:background="@drawable/edittext_design"
+                        android:hint="@string/comment"
+                        android:inputType="textMultiLine"
+                        android:maxLength="370"
+                        android:minHeight="48dp"
+                        android:paddingStart="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:maxLines="7"
+                        android:saveEnabled="true"
+                        android:text=""
+                        android:textColorHint="#757575"
+                        tools:ignore="RtlSymmetry" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.cardview.widget.CardView>
+            <!--Check 15-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/m_cv_15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:elevation="5dp"
+                android:orientation="vertical"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/m_cv_14">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:id="@+id/m_heading_15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:padding="10dp"
+                        android:text="@string/machining_15"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:justificationMode="inter_word"/>
+
+                    <RadioGroup
+                        android:id="@+id/m_ch15_buttons"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/m_ch15_accepted"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal"
+                            android:saveEnabled="true"
+                            android:text="@string/accepted"
+                            android:textAlignment="center" />
+
+                        <RadioButton
+                            android:id="@+id/m_ch15_rejected"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal"
+                            android:saveEnabled="true"
+                            android:text="@string/rejected"
+                            android:textAlignment="center" />
+
+                        <RadioButton
+                            android:id="@+id/m_ch15_not_applicable"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal"
+                            android:saveEnabled="true"
+                            android:text="@string/not_applicable"
+                            android:textAlignment="center" />
+                    </RadioGroup>
+
+                    <EditText
+                        android:id="@+id/m_ch15_comment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/m_ch5_buttons"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:autofillHints=""
+                        android:background="@drawable/edittext_design"
+                        android:hint="@string/comment"
+                        android:inputType="textMultiLine"
+                        android:maxLength="370"
+                        android:minHeight="48dp"
+                        android:paddingStart="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:maxLines="7"
+                        android:saveEnabled="true"
+                        android:text=""
+                        android:textColorHint="#757575"
+                        tools:ignore="RtlSymmetry" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.cardview.widget.CardView>
+            <!--Check 16-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/m_cv_16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:elevation="5dp"
+                android:orientation="vertical"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/m_cv_15">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:id="@+id/m_heading_16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:padding="10dp"
+                        android:text="@string/machining_16"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:justificationMode="inter_word"/>
+
+                    <RadioGroup
+                        android:id="@+id/m_ch16_buttons"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/m_ch16_accepted"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal"
+                            android:saveEnabled="true"
+                            android:text="@string/accepted"
+                            android:textAlignment="center" />
+
+                        <RadioButton
+                            android:id="@+id/m_ch16_rejected"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal"
+                            android:saveEnabled="true"
+                            android:text="@string/rejected"
+                            android:textAlignment="center" />
+
+                        <RadioButton
+                            android:id="@+id/m_ch16_not_applicable"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal"
+                            android:saveEnabled="true"
+                            android:text="@string/not_applicable"
+                            android:textAlignment="center" />
+                    </RadioGroup>
+
+                    <EditText
+                        android:id="@+id/m_ch16_comment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/m_ch5_buttons"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:autofillHints=""
+                        android:background="@drawable/edittext_design"
+                        android:hint="@string/comment"
+                        android:inputType="textMultiLine"
+                        android:maxLength="370"
+                        android:minHeight="48dp"
+                        android:paddingStart="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:maxLines="7"
+                        android:saveEnabled="true"
+                        android:text=""
+                        android:textColorHint="#757575"
+                        tools:ignore="RtlSymmetry" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.cardview.widget.CardView>
+
+            <!--Common comment card-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/m_cv_common"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:elevation="5dp"
+                android:orientation="vertical"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/m_cv_16">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:id="@+id/m_heading_common"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:gravity="start"
+                        android:padding="10dp"
+                        android:text="@string/common_comment"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/m_chcommon_comment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/m_ch5_buttons"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/edittext_design"
+                        android:gravity="top"
+                        android:inputType="textMultiLine"
+                        android:minHeight="110dp"
+                        android:paddingStart="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:maxLines="5"
+                        android:saveEnabled="true"
+                        android:text=""
+                        android:textColorHint="#757575"
+                        tools:ignore="RtlSymmetry" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/ic_baseline_photo_camera_24"
+        app:backgroundTint="@color/purple_500"
+        app:tint="@color/white"
+        android:contentDescription="camera_start"/>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
